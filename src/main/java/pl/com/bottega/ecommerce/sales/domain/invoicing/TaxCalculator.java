@@ -5,10 +5,12 @@
  */
 package pl.com.bottega.ecommerce.sales.domain.invoicing;
 
+import pl.com.bottega.ecommerce.sharedkernel.Money;
+
 /**
  *
  * @author Godzio
  */
 public interface TaxCalculator {
-    public Tax taxCalculator();
+    public Tax calculateTax( RequestItem item, Money net );
 }
